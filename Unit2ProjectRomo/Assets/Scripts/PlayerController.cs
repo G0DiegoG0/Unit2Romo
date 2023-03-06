@@ -28,5 +28,10 @@ public class PlayerController : MonoBehaviour
         }
         horazontalInput = Input.GetAxis("Horizontal");
         transform.Translate(Vector3.right * horazontalInput * Time.deltaTime * speed);
+
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+        }
     }
 }
