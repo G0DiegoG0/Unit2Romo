@@ -1883,6 +1883,8 @@ GameObject:
   - component: {fileID: 8936600877274340788}
   - component: {fileID: 8936600875944717257}
   - component: {fileID: 1263382252}
+  - component: {fileID: 1674792717402567111}
+  - component: {fileID: 7481893690475680463}
   m_Layer: 0
   m_Name: Horse
   m_TagString: Untagged
@@ -1898,7 +1900,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8936600877283858300}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -16.3, y: 0, z: 9.57}
+  m_LocalPosition: {x: -15.71, y: 0, z: 8.85}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1924,7 +1926,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 8d09d925d62f9924488c35d1fc609194, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_WarningMessage: 
@@ -1954,6 +1956,31 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f43f8ba95aa8fd744ac5c45a7e251ff2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1674792717402567111
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8936600877283858300}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9.688024, y: 36.751324, z: 43.242935}
+  m_Center: {x: 0.10324925, y: 17.87565, z: 4.461224}
+--- !u!114 &7481893690475680463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8936600877283858300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b68520cd70eb5db49b1615ccf68b562d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &8936600877283860764

@@ -3140,6 +3140,8 @@ GameObject:
   - component: {fileID: 1764458191200209760}
   - component: {fileID: 1764458191147266645}
   - component: {fileID: 1721899017}
+  - component: {fileID: 2370153983255265986}
+  - component: {fileID: 9169300747759597968}
   m_Layer: 0
   m_Name: Dog
   m_TagString: Untagged
@@ -3155,7 +3157,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1764458191192904272}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 13.35, y: 0, z: 11.07}
+  m_LocalPosition: {x: 15.73, y: 0, z: 11.07}
   m_LocalScale: {x: 12, y: 12, z: 12}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3212,7 +3214,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: d7ff2687a5152784496920a366fcc30e, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_WarningMessage: 
@@ -3242,6 +3244,31 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f43f8ba95aa8fd744ac5c45a7e251ff2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &2370153983255265986
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1764458191192904272}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.08217923, y: 0.22862387, z: 0.24999774}
+  m_Center: {x: -0.0043923846, y: 0.07673317, z: 0.033747338}
+--- !u!114 &9169300747759597968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1764458191192904272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b68520cd70eb5db49b1615ccf68b562d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1764458191192907320
