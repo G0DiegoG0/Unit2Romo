@@ -4,24 +4,20 @@ using UnityEngine;
 
 public class DestroyOutOfBounds : MonoBehaviour
 {
-    private float topBound = 30;
-    private float lowerBound = -10;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
+    private float leftLimit = 30;
+    private float bottomLimit = -5;
+   
     // Update is called once per frame
     void Update()
     {
         //If an object goes past the players view in the game, remove that object
-        if (transform.position.z > topBound)
+        if (transform.position.z > leftLimit)
         {
             Destroy(gameObject);
-        } else if (transform.position.z < lowerBound)
+        } 
+        // Destroy balls if y position is less than bottomLimit
+        else if (transform.position.y < bottomLimit)
         {
-            Debug.Log("Game Over");
             Destroy(gameObject);
         }
     }
