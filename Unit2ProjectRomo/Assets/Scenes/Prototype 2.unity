@@ -532,6 +532,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1288239118}
   - component: {fileID: 1288239117}
+  - component: {fileID: 1288239119}
   m_Layer: 0
   m_Name: SpawnManager
   m_TagString: Untagged
@@ -553,10 +554,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ballPrefabs:
   - {fileID: 1764458191192904272, guid: 0a257f2eb2cc6744aa77cb1fde5bcf9c, type: 3}
-  - {fileID: 2026607111467896054, guid: a23bf229650bd3043a5a47a2561e502b, type: 3}
   - {fileID: 8936600877283858300, guid: 8ceb047f67b08d545a19367407a350ac, type: 3}
+  - {fileID: 2026607111467896054, guid: a23bf229650bd3043a5a47a2561e502b, type: 3}
+  spawnLimitXLeft: -17
+  spawnLimitXRight: 7
+  spawnPosY: 30
+  startDelay: 1
+  spawnInterval: 4
   dogPrefab: {fileID: 0}
   SpawnRate: 1
+  timestamp: 0
 --- !u!4 &1288239118
 Transform:
   m_ObjectHideFlags: 0
@@ -572,6 +579,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1288239119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1288239116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab34911475539a44db86d03300e740be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animalPrefabs:
+  - {fileID: 1764458191192904272, guid: 0a257f2eb2cc6744aa77cb1fde5bcf9c, type: 3}
+  - {fileID: 8936600877283858300, guid: 8ceb047f67b08d545a19367407a350ac, type: 3}
+  - {fileID: 2026607111467896054, guid: a23bf229650bd3043a5a47a2561e502b, type: 3}
 --- !u!1001 &1300375785
 PrefabInstance:
   m_ObjectHideFlags: 0
